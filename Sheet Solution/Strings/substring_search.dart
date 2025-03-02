@@ -11,5 +11,10 @@ void main() {
 
   
   int index = findSubstring(mainString, substring);
-  print(index != -1 ? 'Substring found at index $index.' : 'Substring not found.');
+  // Display the result
+  if (index != -1) {
+    print('Substring found at index: $index');
+  } else {
+    print('Substring not found.');
+  }
 }
